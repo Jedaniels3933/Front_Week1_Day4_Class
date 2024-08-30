@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+      .why-css {
+        font-size: small;
+      }
+
+      /* #purple-header {
+        color: purple;
+      } */
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="link_to_me.html">Linked page</a>
+        <a href="#css-syntax">CSS Syntax</a>
+      </nav>
+    </header>
+
+    <h1 class="blue purple-header" id="purple-header">Introduction to CSS</h1>
+
+    <section>
+        <h2 class="why-css">Why use CSS?</h2>
+        <p>CSS is a styling language that allows us to style HTML elements to make web pages more visually appealing.</p>
+        <p>Example: "Hey, I want my paragraphs to be blue and centered."</p>
+    </section>
+
+    <section>
+        <h2>Three Ways to Add CSS</h2>
+        <ol>
+          <!-- <li>Inline CSS: <span style="color: blue;">This text is blue (inline style).</span></li> -->
+            <li>Inline CSS: <span style="color: blue;">This text is blue (inline style).</span></li>
+            <li>Internal CSS: Styled in the style tag within the head section.</li>
+            <li>External CSS: Linked through an external stylesheet.</li>
+        </ol>
+    </section>
+
+    <section id="css-syntax">
+        <h2>CSS Syntax</h2>
+        <p>Selectors target HTML elements, and properties define how those elements will look.</p>
+        <pre>
+selector {
+    property: value; 
+    property: value; 
+}
+
+h1 {
+    color: blue; 
+}
+        </pre>
+    </section>
+
+    <section>
+        <h2>CSS Selectors <span>Adding this here</span></h2>
+        <h3>Element Selector</h3>
+        <div>All divs will be blue.</div>
+
+        <h3>Class Selector</h3>
+        <h1 class="big-header">Big Header</h1>
+
+        <h3>ID Selector</h3>
+        <h1 id="main-header">Main Header</h1>
+    </section>
+
+    <section>
+      <button class="btn btn-1">Button 1</button>
+      <button class="btn btn-2">Button 2</button>
+      <button class="btn btn-3">Button 3</button>
+    </section>
+
+    <section>
+      <h2>Parent and Child Combinators</h2>
+      <h3>Descendant Combinator</h3>
+      <div class="ancestor">
+          <p>This paragraph is inside a div, so it will be red.</p>
+          <span>
+              <p>This paragraph is inside a span within a div, so it will also be red.</p>
+          </span>
+      </div>
+      <p>This paragraph is outside the div, so it won't be red.</p>
+
+      <h3>Child Combinator</h3>
+      <div class="parent">
+          <p>This paragraph is a direct child of the div, so it will have a yellow background.</p>
+          <section>
+              <p style="font-size: 1vh;">This paragraph is inside a section within the div, so it won't have a yellow background.</p>
+          </section>
+      </div>
+    </section>
+
+    <section>
+        <h2>Loading CSS</h2>
+        <p>CSS can be loaded in three ways: inline, internal, or external. External is the preferred method for separation of concerns.</p>
+        <!-- <h1 class="blue">This is a black header (inline overrides external)</h1> -->
+        <h1 style="color: black;" class="blue">This is a black header (inline overrides external)</h1>
+    </section>
+
+    <section>
+        <h2>Colors</h2>
+        <p>Using Hex Codes: <span class="blue">This is blue using hex code (#0000FF).</span></p>
+        <p>Using RGB: <span class="rgba-blue">This is blue with RGB (0, 0, 255).</span></p>
+        <p>Using RGBA: <span class="rgba-blue-transparent">This is blue with 50% transparency (RGBA).</span></p>
+    </section>
+
+    <section>
+        <h2>Box Model</h2>
+        <div class="box">This is a box with padding, margin, and border.</div>
+    </section>
+    <section>
+        <h2>Box Model</h2>
+        <div class="box">This is a box with padding, margin, and border.</div>
+    </section>
+
+</body>
+</html>

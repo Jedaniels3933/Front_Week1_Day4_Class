@@ -1,0 +1,72 @@
+/* External CSS file */
+
+/* Element selector */
+/* Select all html elements that are <div> */
+/* div {
+  color: blue;
+} */
+
+/* selector {
+  property: value 
+} */
+
+h1{
+    font-family: fantasy;
+  }
+  
+  /* Class Selectors */
+  .blue {
+    color: #0000FF;
+  }
+  
+  .rgba-blue {
+    color: rgb(0, 0, 255);
+  }
+  
+  .rgba-blue-transparent {
+    color: rgba(0, 0, 255, 0.5);
+  }
+  
+  button {
+    padding: 30px;
+    color: white; 
+    background-color: black;
+  }
+  
+  .btn-1{
+    background-color: blue;
+  }
+  
+  .btn-2{
+    background-color: green;
+  }
+  
+  .btn-3{
+    background-color: purple;
+  }
+  
+  /* ID selector (#) */
+  #main-header {
+    font-size: 1em;
+    color: purple;
+  }
+  
+  /* Descendant combinator (applies to children and grand-children) */
+  .ancestor {
+    color: red; 
+  }
+  
+  /* Child combinator (only styles direct children */
+  .parent > p {
+    background-color: yellow;
+  }
+  
+  /* Box */
+  .box {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin: 50px;
+    border: 10px solid black;
+    background-color: red;
+  }
